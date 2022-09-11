@@ -9,4 +9,8 @@ class Cat extends Animal {
     public void giveSound() {
         System.out.println("Jestem kotem i nazywam się " + getName());
     }
+
+    public void miau() {
+        System.out.println("miau hau");
+    }
 }

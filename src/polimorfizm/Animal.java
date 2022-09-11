@@ -1,6 +1,6 @@
 package polimorfizm;
 
-    class Animal {
+    class     Animal {
         private String name;
 
         public Animal(String name) {

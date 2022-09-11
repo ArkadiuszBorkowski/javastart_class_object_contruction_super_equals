@@ -4,6 +4,7 @@ class Computer {
     private double cpuTemperature; // temp procesora
     private int ramMemory; // MB
 
+    // konstruktor
     public Computer(double cpuTemperature, int ramMemory) {
         super();
         this.cpuTemperature = cpuTemperature;
@@ -24,5 +25,9 @@ class Computer {
 
     public void setRamMemory(int ramMemory) {
         this.ramMemory = ramMemory;
+    }
+
+    public void coolDown()  {
+        cpuTemperature = cpuTemperature -1;
     }
 }

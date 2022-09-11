@@ -1,25 +1,17 @@
 package shop;
 
-public class Apple extends Fruit {
+class Apple extends Fruit {
 
-    public static final String TYPE = "jabłkowate";
-    private String variety;
+    public static final String TYPE = "Jabłkowaty";
+    private String vatiety;
 
-    public Apple(double weight, String variety) {
-        super(TYPE, weight);
-        this.variety = variety;
-    }
-
-    public String getVariety() {
-        return variety;
-    }
-
-    public void setVariety(String variety) {
-        this.variety = variety;
+    public Apple(double weight, String vatiety) {
+        super(weight, TYPE);
+        this.vatiety = vatiety;
     }
 
     @Override
-    public String GetInfo() {
-        return super.GetInfo() + ", odmiana: " + variety;
-    }
+    public String getInfo() {
+      return super.getInfo() + "odmiana: " + vatiety;
+   }
 }

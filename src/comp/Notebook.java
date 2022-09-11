@@ -8,13 +8,21 @@ class Notebook extends Computer {
         this.batteryCapacity = batteryCapacity;
     }
 
-
-
     public int getBatteryCapacity() {
         return batteryCapacity;
     }
 
     public void setBatteryCapacity(int batteryCapacity) {
         this.batteryCapacity = batteryCapacity;
+    }
+
+    @Override
+    public void coolDown() {
+        super.coolDown();
+        turboCool();
+    }
+
+    private void turboCool() {
+        setCpuTemperature(getBatteryCapacity() - 2);
     }
 }

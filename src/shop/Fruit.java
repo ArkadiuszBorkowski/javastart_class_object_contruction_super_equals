@@ -1,13 +1,16 @@
 package shop;
 
-public class Fruit {
-    private String type;
+class Fruit {
     private double weight;
+    private String type;
 
-
-    public Fruit(String type, double weight) {
+    public Fruit(double weight, String type) {
         this.weight = weight;
         this.type = type;
+    }
+
+    public String getInfo() {
+        return "Waga: " + weight + ", " + "typ: " + type;
     }
 
     public double getWeight() {
@@ -25,10 +28,4 @@ public class Fruit {
     public void setType(String type) {
         this.type = type;
     }
-
-    String GetInfo() {
-        return "Waga: " + weight + ", " + "typ: " + type;
-    }
-
-
 }
